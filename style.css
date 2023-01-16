@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    position: absolute;
+    top: -5rem;
+    left: -10rem;
+    width: 30rem;
+    height: 30rem;
+    background: rgba(252, 163, 17, 1);
+    border-radius: 500px;
+}
+.card{
+    width: 70vw;
+    min-height: 60vh;
+    max-height: fit-content;
+    padding: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.title{
+    font-size: 110px;
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(17deg, rgba(252, 163, 17, 1) 26%, rgba(229, 229, 229, 1) 38%, rgba(229, 229, 229, 1) 51%, rgba(252, 163, 17, 1) 67%, rgba(241, 242, 242, 1) 79%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.timer{
+    display: flex;
+    color: rgba(229, 229, 229, 1);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.num{
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 150px;
+    font-size: 60px;
+}
+
+.colon{
+    font-size: 40px;
+}
+@media screen and (max-width: 1250px){
+    .title{
+        font-size: 90px;
+    }
+
+}
+@media screen and (max-width: 1050px){
+    .title{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .title{
+        font-size: 50px;
+    }
+    .circle{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .timer-content{
+        font-size: 10px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .num{
+        padding: 15px;
+        margin-bottom: 5px;
+        border-radius: 150px;
+        font-size: 20px;
+    }
+    .colon{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .timer-content{
+        font-size: 8px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .num{
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 150px;
+        font-size: 15px;
+    }
+    .colon{
+        font-size: 10px;
+    }
+    .circle{
+        width: 20rem;
+        height: 20rem;
+    }
+}
