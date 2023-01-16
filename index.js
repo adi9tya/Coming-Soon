@@ -46,4 +46,3 @@ const startTimer = function() {
 }
 
 startTimer();
-
