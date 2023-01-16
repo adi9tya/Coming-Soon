@@ -13,10 +13,10 @@ const startTimer = function() {
         let hour = h;
         let min = m;
         let sec = s;
-        Day.textContent = `${day}`;
-        Hour.textContent = `${hour}`;
-        Minute.textContent = `${min}`;
-        Second.textContent = `${sec}`;
+        Day.textContent = `${day}`.padStart(2,0);
+        Hour.textContent = `${hour}`.padStart(2,0);
+        Minute.textContent = `${min}`.padStart(2,0);
+        Second.textContent = `${sec}`.padStart(2,0);
         s--;
         if(s < 0){
         m--;
